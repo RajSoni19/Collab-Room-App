@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "903055783241",
+    "project_id": "colab-room-app",
+    "storage_bucket": "colab-room-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:903055783241:android:d4688e7c161e9012c01698",
+        "android_client_info": {
+          "package_name": "com.example.colab_room"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "903055783241-ioaqnde5g53kr9gk2f1299ae6eom4a28.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.colab_room",
+            "certificate_hash": "ae4af4459fd3f1197899387899818af61903a9d3"
+          }
+        },
+        {
+          "client_id": "903055783241-mpvjtcc7mche79urk8m0h93j13fdu825.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZELk_6R2P6VbtbensZEkVguKH_7JXNgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "903055783241-mpvjtcc7mche79urk8m0h93j13fdu825.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
