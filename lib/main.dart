@@ -1,5 +1,6 @@
 import 'package:colab_room/resources/auth_methods.dart';
 import 'package:colab_room/screens/home_screen.dart';
+import 'package:colab_room/screens/video_call_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:colab_room/screens/login_screen.dart';
 import 'package:colab_room/utils/colors.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/login': (context) => const LoginScreen(),
         '/home': (context) => const HomeScreen(),
+        '/video-call':(context)=>const VideoCallScreen(),
       },
       home: StreamBuilder(
         stream: AuthMethods().authChanges,

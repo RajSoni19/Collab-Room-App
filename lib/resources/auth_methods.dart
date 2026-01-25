@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:colab_room/utils/utils.dart';
 
@@ -14,7 +15,14 @@ class AuthMethods {
   Future<bool> signInWithGoogle(BuildContext context) async {
     bool res = false;
     try {
-      final GoogleSignIn googleSignIn = GoogleSignIn();
+      // For web, google_sign_in requires an explicit Web OAuth client ID.
+      // Replace the placeholder below with your actual Web client ID
+      // (looks like: 1234567890-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com).
+      const String webClientId = '903055783241-mpvjtcc7mche79urk8m0h93j13fdu825.apps.googleusercontent.com';
+
+      final GoogleSignIn googleSignIn = kIsWeb
+          ? GoogleSignIn(clientId: webClientId)
+          : GoogleSignIn();
       final GoogleSignInAccount? googleUser = await googleSignIn.signIn();
 
       if (googleUser == null) {
